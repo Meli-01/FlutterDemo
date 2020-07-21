@@ -1,6 +1,6 @@
-# About this App
+# About
 
-This is a demo app implemented for a thesis at the Fernfachhochschule Schweiz.
+This is a Flutter demo app implemented for a thesis at the Fernfachhochschule Schweiz.
 
 ## Tested Features
 
