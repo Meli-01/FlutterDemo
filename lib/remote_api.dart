@@ -55,18 +55,18 @@ class _RemoteAPIPageState extends State<RemoteAPIPage> {
 
 class Weather {
   final String description;
-  final double temp;
-  final int humidity;
-  final int wind;
+  final String temp;
+  final String humidity;
+  final String wind;
 
   Weather({this.description, this.temp, this.humidity, this.wind});
 
   factory Weather.fromJson(Map<String, dynamic> json){
     return Weather(
         description: json['weather'][0]['description'],
-        temp: json['main']['temp'],
-        humidity: json['main']['humidity'],
-        wind: json['wind']['speed']
+        temp: json['main']['temp'].toString(),
+        humidity: json['main']['humidity'].toString(),
+        wind: json['wind']['speed'].toString()
     );
   }
 }
