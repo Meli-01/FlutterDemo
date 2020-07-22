@@ -22,9 +22,9 @@ class _GpsPageState extends State<GpsPage> {
           children: <Widget>[
             userLocation == null
                 ? Text('No Location found.')
-                : Text("Location:" +
+                : Text("Latitude: " +
                 userLocation.latitude.toString() +
-                " " +
+                ", Longitude: " +
                 userLocation.longitude.toString()),
             Padding(
               padding: const EdgeInsets.all(8.0),
@@ -36,7 +36,7 @@ class _GpsPageState extends State<GpsPage> {
                     });
                   });
                 },
-                color: Colors.blue,
+                color: Colors.green,
                 child: Text(
                   "Load GPS Data",
                   style: TextStyle(color: Colors.white),
